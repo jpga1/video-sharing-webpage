@@ -14,19 +14,21 @@
     <header>
         <!-- form a navigation bar with company logo, search bar, collapsible menu, and sign-in button -->
         <nav class="navbar navbar-dark bg-dark">
-
+            <!-- collapse menu button -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsible_navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <!-- logo -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand navbar-left" href="#">
                 <img src="assets/youtube-logo.svg" alt="" width="120px">
             </a>
 
-            <!-- search bar -->
             <form class="form-inline" action="#">
                 <!-- append search button to search bar -->
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search">
                     <div class="input-group-prepend">
-                        <button class="btn btn-secondary">
+                        <button class="btn btn-secondary rounded">
                             <img src="assets/search-icon.svg" alt="">
                         </button>
                     </div>
@@ -35,11 +37,7 @@
                     <img src="assets/mic-icon.svg" alt="">
                 </button>
             </form>
-
-            <!-- collapse menu -->
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsible_navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            
 
             <!-- <div class="collapse navbar-collapse" id="collapsible_navbar">
                 <ul class="navbar-nav">
@@ -55,10 +53,11 @@
                 </ul>
             </div> -->
 
-            <!-- sign-in button -->
-            <button class="btn btn-outline-primary">
-                <img src="assets/account-circle-icon.svg" alt="">
-                Sign in</button>
+                    <!-- sign-in button -->
+                    <button class="btn btn-outline-primary">
+                        <img src="assets/account-circle-icon.svg" alt="">
+                        Sign in</button>
+
         </nav>
 
         <!-- collapsible menu -->
